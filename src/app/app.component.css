@@ -1,0 +1,7 @@
+body {
+    background-image: url("../assets/img/back.png");
+    min-height: 400px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

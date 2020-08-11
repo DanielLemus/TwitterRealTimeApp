@@ -1,0 +1,29 @@
+<div id="container">
+    <div id="search">
+        <input [value]="hashtag" (input)="hashtag = $event.target.value">
+        <button (click)="onChange()">Search</button>
+        <div class="margin-top-5">
+            <span>Do not use # in the search  · </span>
+            <span>Limited to one hashtag  · </span>
+            <span>i.e: superbowl</span>
+        </div>
+    </div>
+    <div class="tweets " *ngFor="let tweet of tweets">
+        <div class="tweet-container">
+            <div class="tweet">
+                <div>
+                    <img class="profile-image" src='{{tweet.user.profile_image_url}}'>         
+                </div>
+            </div>
+            <div class="content">
+                <div class="user-info">
+                    <span id="user-name">{{tweet.user.name}}</span> &nbsp;
+                    <span class="user-screen-name">@{{tweet.user.screen_name}}</span> ·
+                    <span class="user-screen-name">{{tweet.created_at | date}}</span>
+                    <span class="user-screen-name" *ngIf="tweet.place">{{tweet.place.country_code}}</span>
+                </div>
+                <span class="text">{{tweet.text}}</span> 
+            </div>
+        </div>
+    </div>
+</div> 

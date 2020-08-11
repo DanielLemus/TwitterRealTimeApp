@@ -1,0 +1,98 @@
+#container{
+
+    background-color: whitesmoke;
+    border-radius: 5px;
+    color: black;
+    margin: auto;
+    margin-top: 50px;
+    width: 90%;
+    border: 5px solid white;
+    padding: 10px;
+    opacity: 0.9;
+    min-height: 490px;
+    overflow-y: scroll;
+    max-height: 490px;
+}
+
+#container::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+#container::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+#container::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: skyblue;
+}
+
+
+.tweet{
+    font-family: "Helvetica";
+    font-size: medium;
+    float: left;
+    padding: 2px 2px 2px 2px;
+}
+
+.content{
+    font-family: "Helvetica";
+    font-size: medium;
+    float: right;
+    width:500px;
+}
+
+.tweets{
+   margin: auto;
+   margin-top: 10px;
+   padding: 2px 2px 2px 2px;
+   width: 562px;
+  overflow-x: auto;
+   border-bottom: 2px solid lightgray;
+}
+
+.profile-image{
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+
+#user-name{
+  font-weight: bolder;
+}
+
+.user-screen-name{
+  color:rgb(101, 119, 134);
+
+}
+
+.user-info{
+    margin-bottom: 3px;
+}
+
+.tweet-container{
+    overflow: auto;
+}
+
+.tweet-container:hover{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: skyblue;
+}
+
+#search{
+    text-align: center;
+    font-family: "Helvetica";
+    font-size: small;
+}
+
+.margin-top-5{
+    margin-top: 5px !important;
+}
